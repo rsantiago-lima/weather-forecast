@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: radial-gradient(
+    rgb(62, 62, 165),
+    rgb(57, 57, 121),
+    rgb(67, 67, 187)
+  );
+}
+
+#container {
+  background-color: #f0f8ff;
+  border-radius: 1.25rem;
+  padding: 1.125rem;
+  box-shadow: 0.3125rem 0.3125rem 0.3125rem rgba(0, 0, 0, 0.1);
+}
+
+#search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 0.0625rem solid #bdbdbd;
+  border-radius: 0.625rem;
+  padding: 0.25rem 0.75rem;
+}
+
+#search input {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  width: 100%;
+}
+
+#search input:focus-visible {
+  outline: none;
+}
+
+#search button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#weather {
+  display: none;
+  margin-top: 20px;
+}
+
+#weather.show {
+  display: block;
+}
+
+#weather #title {
+  text-align: center;
+  margin-bottom: 0.3125rem;
+  font-weight: 600;
+  color: #372f3f;
+}
+
+#temp {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1.25rem;
+  background: linear-gradient(90deg, #5a7cdc, #606dde);
+  color: #fff;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+}
+
+#temp_img {
+  filter: drop-shadow(0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.2));
+}
+
+#temp_value {
+  font-weight: bold;
+  font-size: 3.125rem;
+  line-height: 3.4375rem;
+}
+
+#temp_description {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+#other_infos {
+  margin-top: 1.875rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+#other_infos .info {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0.25rem 0.625rem;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0rem 0.3125rem rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  gap: 0.625rem;
+}
+
+#other_infos .info h2 {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+#other_infos .info i {
+  text-align: center;
+  font-size: 1.25rem;
+  width: 20%;
+}
+
+#temp_max_icon {
+  color: #7f1d1d;
+}
+
+#temp_min_icon {
+  color: #0284c7;
+}
+
+#humidity_icon {
+  color: #0ea5e9;
+}
+
+#wind_icon {
+  color: #7c3aed;
+}
+
+#alert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#alert img {
+  width: 12.5rem;
+  margin-top: 1.25rem;
+}
